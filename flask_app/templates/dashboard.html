@@ -1,0 +1,9 @@
+<h1>Dashboard</h1>
+<form method="POST" action="/evaluate">
+    <input type="text" name="expression">
+    <input type="submit" value="Evaluate">
+</form>
+{% for expr in expressions %}
+<p>{{ expr }}</p>
+{% endfor %}
+<a href="/logout">Logout</a>
